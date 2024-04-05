@@ -1,0 +1,41 @@
+syntax on
+set hlsearch
+set ignorecase
+set incsearch
+set number
+set termguicolors
+let mapleader = "\<Space>"
+inoremap jk <ESC>
+
+if has("patch-8.1.0360")
+  set diffopt+=internal,algorithm:patience
+  :set diffopt+=indent-heuristic
+endif
+
+call plug#begin()
+" The default plugin directory will be as follows:
+"   - Vim (Linux/macOS): '~/.vim/plugged'
+"   - Vim (Windows): '~/vimfiles/plugged'
+"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
+" You can specify a custom plugin directory by passing it as the argument
+"   - e.g. `call plug#begin('~/.vim/plugged')`
+"   - Avoid using standard Vim directory names like 'plugin'
+
+" Make sure you use single quotes" 
+
+Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+
+Plug 'preservim/nerdtree'
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'ctrlpvim/ctrlp.vim'
+
+" Initialize plugin system
+" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+call plug#end()
+" You can revert the settings after the call like so:
+"   filetype indent off   " Disable file-type-specific indentation
+"   syntax off            " Disable syntax highlighting
+   
+colorscheme catppuccin_macchiato
