@@ -1,0 +1,29 @@
+= dotfiles
+
+Windows and WSL dotfiles managed by a bare git repository.
+
+Idea taken from https://www.atlassian.com/git/tutorials/dotfiles and https://github.com/pawelbialaszczyk/dotfiles.
+
+== Setup
+
+----
+git clone --bare <git-repo-url> $HOME/.cfg
+----
+
+----
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+----
+
+----
+config checkout
+----
+
+----
+config config --local include.path ../.dotfiles_gitconfig
+----
+
+----
+mkdir -p .config-backup && \
+config checkout 2>&1 | egrep "\s+\." | awk {'print $1'} | \
+xargs -I{} mv {} .config-backup/{}
+----
