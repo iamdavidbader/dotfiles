@@ -1,11 +1,9 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions": 
-    [
+    "actions": [
         {
-            "command": 
-            {
+            "command": {
                 "action": "copy",
                 "singleLine": false
             },
@@ -16,8 +14,7 @@
             "keys": "ctrl+v"
         },
         {
-            "command": 
-            {
+            "command": {
                 "action": "splitPane",
                 "split": "auto",
                 "splitMode": "duplicate"
@@ -33,24 +30,19 @@
     "copyOnSelect": false,
     "defaultProfile": "{bdd5b261-66ed-4452-8be4-977b0635627d}",
     "language": "en-US",
-    "newTabMenu": 
-    [
+    "newTabMenu": [
         {
             "type": "remainingProfiles"
         }
     ],
-    "profiles": 
-    {
-        "defaults": 
-        {
+    "profiles": {
+        "defaults": {
             "colorScheme": "Catppuccin Macchiato",
-            "font": 
-            {
-                "face": "MesloLGS Nerd Font Mono"
+            "font": {
+                "face": "Hack Nerd Font Mono"
             }
         },
-        "list": 
-        [
+        "list": [
             {
                 "commandline": "%PROGRAMFILES%\\Git\\bin\\bash.exe --login -i",
                 "guid": "{bdd5b261-66ed-4452-8be4-977b0635627d}",
@@ -101,8 +93,7 @@
             }
         ]
     },
-    "schemes": 
-    [
+    "schemes": [
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -358,24 +349,20 @@
         }
     ],
     "theme": "Catppuccin Macchiato",
-    "themes": 
-    [
+    "themes": [
         {
             "name": "Catppuccin Macchiato",
-            "tab": 
-            {
+            "tab": {
                 "background": "#24273AFF",
                 "iconStyle": "default",
                 "showCloseButton": "always",
                 "unfocusedBackground": null
             },
-            "tabRow": 
-            {
+            "tabRow": {
                 "background": "#1E2030FF",
                 "unfocusedBackground": "#181926FF"
             },
-            "window": 
-            {
+            "window": {
                 "applicationTheme": "dark",
                 "experimental.rainbowFrame": false,
                 "frame": null,

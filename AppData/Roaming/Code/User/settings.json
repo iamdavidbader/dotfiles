@@ -1,7 +1,7 @@
 {
     "editor.formatOnSave": true,
     "editor.suggest.insertMode": "replace",
-    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
     "workbench.colorTheme": "Catppuccin Macchiato",
     "cmake.configureOnOpen": true,
     "asciidoc.preview.useEditorStyle": false,
@@ -90,7 +90,7 @@
                 ":split"
             ]
         },
-        // panes
+        // pans
         {
             "before": [
                 "leader",
@@ -163,6 +163,16 @@
             ],
             "commands": [
                 "workbench.view.explorer"
+            ]
+        },
+        // search
+        {
+            "before": [
+                "<leader>",
+                "f"
+            ],
+            "commands": [
+                "workbench.view.search"
             ]
         },
         // lsp 

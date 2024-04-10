@@ -35,6 +35,27 @@
         "command": "filesExplorer.paste",
         "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
     },
+    //Search
+    {
+        "key": "space f",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "searchViewletVisible && !inputFocus"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "search.focus.nextInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "search.focus.previousInputBox",
+        "when": "inSearchEditor && inputBoxFocus || inputBoxFocus && searchViewletVisible && !searchInputBoxFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "search.action.focusSearchFromResults",
+        "when": "firstMatchFocus && searchViewletVisible"
+    },
     // Terminal
     {
         "key": "ctrl+shift+j",
