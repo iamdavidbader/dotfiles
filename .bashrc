@@ -83,24 +83,16 @@ BG_RED="\[\e[41m\]"
 
 . ~/.git-completion.bash
 . ~/.git-prompt.sh
+. ~/.fzf/bin/fzf-git.sh
 
-export GIT_PS1_SHOWDIRTYSTATE=1 
+export GIT_PS1_SHOWDIRTYSTATE=
 export GIT_PS1_SHOWSTASHSTAT=1 
-export GIT_PS1_SHOWUNTRACKEDFILES=1
+export GIT_PS1_SHOWUNTRACKEDFILES=
 export GIT_PS1_SHOWUPSTREAM=verbose 
 export GIT_PS1_DESCRIBE_STYLE=branch 
 export GIT_PS1_SHOWCOLORHINTS=1
 export GIT_PS1_HIDE_IF_PWD_IGNORED=1
 export GIT_PS1_SHOWCOLORHINTS=1
-
-parse_git_bg() {
-  if [[ $(git status -s 2> /dev/null) ]]; then
-    echo -e "${FG_WHITE}on "
-  else
-    echo -e ""
-  fi
-}
-
 
 if [ "$color_prompt" = yes ]; then
     PS1="${debian_chroot:+($debian_chroot)}"
@@ -202,3 +194,5 @@ if [[ "$OSTYPE" == "msys" ]]; then
     start_ssh_agent;
   fi
 fi
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
