@@ -143,7 +143,7 @@
                 "w"
             ],
             "commands": [
-                ":w!"
+                ":w"
             ]
         },
         {
@@ -152,7 +152,7 @@
                 "q"
             ],
             "commands": [
-                ":q!"
+                ":q"
             ]
         },
         // explorer
@@ -260,6 +260,24 @@
                 "editor.action.showDefinitionPreviewHover"
             ]
         },
+        {
+            "before": [
+                "leader",
+                "c",
+            ],
+            "commands": [
+                "editor.action.addCommentLine"
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "u",
+            ],
+            "commands": [
+                "editor.action.removeCommentLine"
+            ]
+        }
     ],
     "vim.statusBarColorControl": true,
     "vim.statusBarColors.normal": [
@@ -296,4 +314,7 @@
         "statusBar.debuggingForeground": "#000"
     },
     "editor.fontFamily": "Consolas, 'Courier New', monospace, 'Hack Nerd Font'",
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
 }
