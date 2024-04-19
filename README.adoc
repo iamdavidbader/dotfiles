@@ -39,6 +39,8 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 curl https://raw.githubusercontent.com/junegunn/fzf-git.sh/main/fzf-git.sh >> ~/.fzf/bin/fzf-git.sh
 ----
 
+fzf-git.sh has a problem for vi bindings. However a fix is already in the making with this https://github.com/junegunn/fzf-git.sh/pull/41/files[pull request].
+
 ----
 pip install tldr
 ----

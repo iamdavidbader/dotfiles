@@ -85,7 +85,6 @@ BG_RED="\[\e[41m\]"
 
 . ~/.git-completion.bash
 . ~/.git-prompt.sh
-. ~/.fzf/bin/fzf-git.sh
 
 export GIT_PS1_SHOWDIRTYSTATE=
 export GIT_PS1_SHOWSTASHSTAT=1 
@@ -198,3 +197,4 @@ if [[ "$OSTYPE" == "msys" ]]; then
 fi
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[ -f ~/.fzf/bin/fzf-git.sh ] && source ~/.fzf/bin/fzf-git.sh
