@@ -6,12 +6,20 @@
     path = .git-user
 [core]
     autocrlf = true
+    pager = delta
+[interactive]
+    diffFilter = delta --color-only
+[delta]
+    navigate = true
+    side-by-side = true
 [diff]
 	algorithm = histogram
 	submodule = log
 	tool = vimdiff
+    colorMoved = default
 [merge]
 	tool = vimdiff
+    conflictstyle = diff3
 [difftool]
 	prompt = false
 [difftool "vimdiff"]
