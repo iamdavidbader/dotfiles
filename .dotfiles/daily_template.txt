@@ -1,0 +1,17 @@
+'''
+title : "{title}"
+id: {id}
+date: {date}
+'''
+= {title}
+
+== Journal
+
+
+
+== ToDos
+
+- [ ]
+
+== Notes
+
