@@ -1,0 +1,62 @@
+'''
+title : "{title}"
+id: {id}
+date: {date}
+'''
+= Meeting Minutes
+
+== Meeting Information
+
+Meeting Date/Time:: {date}, {time}  
+Meeting Purpose:: {title}  
+Meeting Location:: meeting_location  
+Note Taker:: David Bader  
+
+
+== Attendees
+
+|====
+| Attendees | E-Mail
+
+| David Bader | dbader@outlook.de
+|====
+
+== Agenda Items
+
+|====
+| Item | Description
+
+| Agenda Item 1 
+| desc
+
+| Agenda Item 2 
+| desc
+|====
+
+
+== Discussion Items
+
+|====
+| Item | Who | Notes
+
+| item 
+| who 
+| notes
+|====
+
+
+== Action Items
+
+|====
+| Done? | Item | Responsible | Due Date
+
+a| - [ ] done
+| item 
+| who 
+| due_date
+
+|====
+
+== Other Notes & Information
+
+N/A

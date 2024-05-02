@@ -1,0 +1,8 @@
+'''
+title : "{title}"
+id: {id}
+date: {date}
+'''
+= {title}
+
+
