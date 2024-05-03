@@ -317,4 +317,7 @@
     "terminal.integrated.commandsToSkipShell": [
         "matlab.interrupt"
     ],
+    "asciidoc.preview.asciidoctorAttributes": {
+        "skip-front-matter": true
+    },
 }
