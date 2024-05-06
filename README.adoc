@@ -46,3 +46,9 @@ pip install tldr
 ----
 
 Install https://github.com/dandavison/delta[delta] for improved git diffs in the command line.
+
+Install https://github.com/BurntSushi/ripgrep[ripgrep].
+
+Install https://github.com/dandavison/delta[delta].
+
+Install https://github.com/sharkdp/bat[bat].
