@@ -5,7 +5,7 @@
 [include]
     path = .git-user
 [core]
-    autocrlf = true
+    autocrlf = input
     pager = delta
 [interactive]
     diffFilter = delta --color-only
@@ -43,5 +43,3 @@
     s = status -s
     d = diff
     ds = diff --staged
-[http]
-	sslBackend = schannel
