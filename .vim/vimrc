@@ -4,7 +4,10 @@ set ignorecase
 set incsearch
 set number
 set number relativenumber
+
 set termguicolors
+set t_Co=256
+set background=dark
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
@@ -19,14 +22,11 @@ let mapleader = "\<Space>"
 inoremap jk <ESC>
 nnoremap <C-u> <C-u>zz
 nnoremap <C-d> <C-d>zz
-nnoremap Q <Nop>
-xnoremap <leader>y "+y
-xnoremap p "_dP
 
-if has("patch-8.1.0360")
-  set diffopt+=internal,algorithm:patience
-  :set diffopt+=indent-heuristic
-endif
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-H> <C-W>h
+nnoremap <C-L> <C-W>l
 
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
@@ -50,9 +50,11 @@ Plug 'preservim/nerdtree'
 
 Plug 'tpope/vim-fugitive'
 
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
-Plug '~/.fzf'
+Plug 'itchyny/lightline.vim'
+Plug 'christoomey/vim-tmux-navigator' 
 
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
@@ -62,3 +64,5 @@ call plug#end()
 "   syntax off            " Disable syntax highlighting
    
 colorscheme catppuccin_macchiato
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
+set laststatus=2
