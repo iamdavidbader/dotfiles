@@ -204,5 +204,5 @@ if [[ "$OSTYPE" == "msys" ]]; then
   fi
 fi
 
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+eval "$(fzf --bash)" 2>/dev/null
 [ -f ~/.fzf/bin/fzf-git.sh ] && source ~/.fzf/bin/fzf-git.sh
