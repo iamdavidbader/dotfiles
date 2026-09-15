@@ -13,7 +13,7 @@
 
 set -euo pipefail
 
-REPO_URL="https://github.com/iamdavidbader/dotfiles.git"
+REPO_URL="git@github.com:iamdavidbader/dotfiles.git"
 DOTFILES_DIR="$HOME/.cfg"
 BRANCH="linux"
 BACKUP_DIR="$HOME/.config-backup/$(date +%Y%m%d-%H%M%S)"
