@@ -58,7 +58,7 @@ else
 fi
 
 echo "==> Checking out dotfiles"
-config checkout "$BRANCH"
+config checkout "$BRANCH" -- .
 config submodule update --init --recursive 2>/dev/null || true
 
 echo "==> Installing CLI tools"
@@ -79,6 +79,6 @@ pkg install -y tar xz-utils
 mkdir -p "$HOME/.termux"
 echo "==> Installing Termux-NF and Hack Nerd Font"
 curl -fsSL https://raw.githubusercontent.com/arnavgr/termux-nf/main/install.sh | bash -s -- --silent
-getnf -i "Hack"
+getnf -i "Hack" < /dev/tty
 
 echo "==> Done. Restart your shell (or run 'exec \$SHELL') to pick up the new config."
